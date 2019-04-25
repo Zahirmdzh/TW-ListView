@@ -1,5 +1,7 @@
 package com.myapplicationdev.android.tw_listview;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.view.menu.ExpandedMenuView;
@@ -35,6 +37,14 @@ public class FirstActivity extends AppCompatActivity {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+
+                Intent i = new Intent(FirstActivity.this, SecondActivity.class);
+                i.putExtra("year",al);
+                startActivity(i);
+
+
+
                 Toast.makeText(FirstActivity.this,
                                 " Clicked " , Toast.LENGTH_LONG).show();
             }

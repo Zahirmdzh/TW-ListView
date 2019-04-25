@@ -2,20 +2,12 @@ package com.myapplicationdev.android.tw_listview;
 
 public class Course {
 
-    private String year;
     private String module;
+    private boolean prog;
 
-    public Course(String year, String module) {
-        this.year = year;
+    public Course(String module, boolean prog) {
         this.module = module;
-    }
-
-    public String getYear() {
-        return year;
-    }
-
-    public void setYear(String year) {
-        this.year = year;
+        this.prog = prog;
     }
 
     public String getModule() {
@@ -24,5 +16,9 @@ public class Course {
 
     public void setModule(String module) {
         this.module = module;
+    }
+
+    public boolean isProg(){
+        return prog;
     }
 }
