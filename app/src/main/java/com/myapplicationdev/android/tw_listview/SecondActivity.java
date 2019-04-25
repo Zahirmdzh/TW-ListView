@@ -25,9 +25,6 @@ public class SecondActivity extends AppCompatActivity {
         tvYear.setText(year);
 
 
-
     }
-
-
 
 }
